@@ -55,7 +55,7 @@ class Executor:
                 if isinstance(thread_config, dict) and "configurable" in thread_config:
                     self._config = RunnableConfig(
                         configurable=thread_config["configurable"],
-                        recursion_limit=100
+                        recursion_limit=150
                     )
                     self._thread_id = thread_config["configurable"]["thread_id"]
                 else:
@@ -63,14 +63,14 @@ class Executor:
                     self._thread_id = str(uuid.uuid4())
                     self._config = RunnableConfig(
                         configurable={"thread_id": self._thread_id},
-                        recursion_limit=100
+                        recursion_limit=150
                     )
             else:
                
                 self._thread_id = str(uuid.uuid4())
                 self._config = RunnableConfig(
                     configurable={"thread_id": self._thread_id},
-                    recursion_limit=100
+                    recursion_limit=150
                 )
             
            
