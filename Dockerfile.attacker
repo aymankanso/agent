@@ -1,0 +1,42 @@
+FROM kalilinux/kali-rolling
+
+# Update package lists and install essential tools + Phase 1 + Metasploit + Tier 1 Power Tools
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    curl \
+    wget \
+    nmap \
+    dnsutils \
+    whois \
+    hydra \
+    exploitdb \
+    nikto \
+    gobuster \
+    sqlmap \
+    masscan \
+    subfinder \
+    whatweb \
+    netcat-traditional \
+    metasploit-framework \
+    nuclei \
+    crackmapexec \
+    python3-impacket \
+    impacket-scripts \
+    ffuf \
+    amass \
+    john \
+    wafw00f \
+    && rm -rf /var/lib/apt/lists/*
+
+# Initialize Metasploit database
+RUN msfdb init || true
+
+# Update nuclei templates
+RUN nuclei -update-templates || true
+
+# Set working directory
+WORKDIR /root
+
+# Keep container running
+CMD ["tail", "-f", "/dev/null"]

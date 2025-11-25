@@ -1,0 +1,39 @@
+﻿{
+  "colors": {
+    "cli": {
+      "default": "cyan",
+      "planner": "bright_blue",
+      "reconnaissance": "green",
+      "initial_access": "yellow",
+      "summary": "magenta"
+    },
+    "frontend": {
+      "default": "#adb5bd",
+      "planner": "#2f80ed",
+      "reconnaissance": "#27ae60",
+      "initial_access": "#f2c94c",
+      "summary": "#9b51e0"
+    }
+  },
+  "avatars": {
+    "default": "🤖",
+    "planner": "🧭",
+    "reconnaissance": "🔎",
+    "initial_access": "🛠️",
+    "summary": "📝"
+  },
+  "css_classes": {
+    "default": "agent-message",
+    "planner": "planner-message",
+    "reconnaissance": "recon-message",
+    "initial_access": "access-message",
+    "summary": "summary-message"
+  },
+  "display_names": {
+    "default": "Agent",
+    "planner": "Planner",
+    "reconnaissance": "Recon",
+    "initial_access": "Initial Access",
+    "summary": "Summary"
+  }
+}

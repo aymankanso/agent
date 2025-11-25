@@ -1,0 +1,292 @@
+
+
+.main {
+    background-color: #0a0a15;
+    background-image: linear-gradient(180deg, #0a0a15 0%, #1a0a2e 100%);
+    color: #e0d5f5;
+}
+.stApp {
+    background-color: #0a0a15;
+    background-image: linear-gradient(180deg, #0a0a15 0%, #1a0a2e 100%);
+}
+.stChatMessage {
+    background-color: rgba(138, 43, 226, 0.08);
+    border-radius: 8px;
+}
+
+
+.stSidebar {
+    background: linear-gradient(180deg, #1a0a2e 0%, #2a1544 100%) !important;
+    color: #e0d5f5 !important;
+    border-right: 1px solid rgba(186, 85, 211, 0.3) !important;
+}
+.stSidebar [data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1a0a2e 0%, #2a1544 100%) !important;
+}
+.stSidebar [data-testid="stSidebarNav"] {
+    background: linear-gradient(180deg, #1a0a2e 0%, #2a1544 100%) !important;
+}
+.stSidebar [data-testid="stSidebarContent"] {
+    background: linear-gradient(180deg, #1a0a2e 0%, #2a1544 100%) !important;
+}
+.stSidebar .sidebar-content {
+    background: linear-gradient(180deg, #1a0a2e 0%, #2a1544 100%) !important;
+}
+
+
+.stSidebar h1, .stSidebar h2, .stSidebar h3, .stSidebar h4, .stSidebar h5, .stSidebar h6 {
+    color: #e0d5f5 !important;
+    text-shadow: 0 0 10px rgba(186, 85, 211, 0.5);
+}
+.stSidebar p, .stSidebar div, .stSidebar span {
+    color: #d0c5e5 !important;
+}
+.stSidebar button {
+    background: linear-gradient(135deg, #3d2066 0%, #5a2d82 100%) !important;
+    color: #e0d5f5 !important;
+    border: 1px solid rgba(186, 85, 211, 0.4) !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 0 10px rgba(186, 85, 211, 0.2);
+}
+.stSidebar button:hover {
+    background: linear-gradient(135deg, #5a2d82 0%, #7a3da8 100%) !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 20px rgba(186, 85, 211, 0.5) !important;
+    border-color: rgba(219, 112, 249, 0.8) !important;
+}
+.stSidebar button:active {
+    background: linear-gradient(135deg, #db70f9 0%, #c44ef7 100%) !important;
+    color: #FFFFFF !important;
+    transform: translateY(0px) !important;
+    box-shadow: 0 0 20px rgba(219, 112, 249, 0.8) !important;
+}
+
+
+.terminal-container {
+    background-color: #1a0a2e;
+    background-image: linear-gradient(135deg, #1a0a2e 0%, #2a1544 100%);
+    color: #e0d5f5;
+    border: 1px solid rgba(186, 85, 211, 0.3);
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+}
+.terminal-header {
+    background: linear-gradient(90deg, #3d2066 0%, #5a2d82 100%);
+    border-bottom: 2px solid rgba(186, 85, 211, 0.5);
+}
+.terminal-prompt {
+    color: #db70f9;
+    text-shadow: 0 0 5px rgba(219, 112, 249, 0.5);
+}
+.terminal-command {
+    color: #c44ef7;
+    text-shadow: 0 0 5px rgba(196, 78, 247, 0.3);
+}
+.terminal-output {
+    color: #d0c5e5;
+}
+.terminal-success {
+    color: #7df9ff;
+    text-shadow: 0 0 5px rgba(125, 249, 255, 0.5);
+}
+.terminal-error {
+    color: #ff1493;
+    text-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
+}
+.terminal-warning {
+    color: #ff69b4;
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+
+pre[data-testid="stCodeBlock"] {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2a1544 100%) !important;
+    border-radius: 8px;
+    padding: 15px !important;
+    margin: 10px 0;
+    border-left: 4px solid #db70f9;
+    border: 1px solid rgba(186, 85, 211, 0.3);
+    font-family: 'Courier New', monospace;
+    font-size: 14px !important;
+    overflow-x: auto;
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.2);
+    color: #d0c5e5 !important;
+}
+
+
+div.stChatMessage[data-testid="stChatMessage"]:has(div strong:contains("Planner")) pre[data-testid="stCodeBlock"] {
+    background: linear-gradient(135deg, #2a1544 0%, #3d2066 100%) !important;
+    border-left: 4px solid #ff1493;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+}
+
+
+.agent-status {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2a1544 50%, #1a0a2e 100%);
+    border: 2px solid rgba(186, 85, 211, 0.3);
+    color: #e0d5f5;
+    box-shadow: 0 2px 10px rgba(138, 43, 226, 0.2);
+}
+.agent-status div {
+    color: #e0d5f5;
+}
+.agent-status:hover {
+    background: linear-gradient(135deg, #2a1544 0%, #3d2066 50%, #2a1544 100%);
+    border-color: rgba(186, 85, 211, 0.6);
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+}
+.agent-status.status-active {
+    background: linear-gradient(135deg, #3d1a52 0%, #5a2d82 50%, #3d1a52 100%);
+    border: 2px solid #db70f9 !important;
+    box-shadow: 0 0 20px rgba(219, 112, 249, 0.6), 0 0 40px rgba(219, 112, 249, 0.3);
+    animation: pulse-button-cyberpunk 1.5s infinite alternate;
+    text-shadow: 0 0 10px rgba(219, 112, 249, 0.8);
+    font-weight: bold;
+}
+.agent-status.status-completed {
+    background: linear-gradient(135deg, #1a3d3d 0%, #2a5858 50%, #1a3d3d 100%);
+    border: 2px solid #7df9ff;
+    box-shadow: 0 0 15px rgba(125, 249, 255, 0.4);
+}
+.agent-status.status-next {
+    background: linear-gradient(135deg, #3d1a52 0%, #5a2d82 50%, #3d1a52 100%);
+    border: 2px dashed #ff69b4 !important;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+
+@keyframes pulse-button-cyberpunk {
+    0% {
+        background: linear-gradient(135deg, #3d1a52 0%, #5a2d82 50%, #3d1a52 100%);
+        box-shadow: 0 0 10px rgba(219, 112, 249, 0.4), 0 0 20px rgba(219, 112, 249, 0.2);
+    }
+    50% {
+        background: linear-gradient(135deg, #5a2d82 0%, #7a3da8 50%, #5a2d82 100%);
+        box-shadow: 0 0 25px rgba(219, 112, 249, 0.8), 0 0 50px rgba(219, 112, 249, 0.4);
+        border-color: rgba(219, 112, 249, 1);
+    }
+    100% {
+        background: linear-gradient(135deg, #3d1a52 0%, #5a2d82 50%, #3d1a52 100%);
+        box-shadow: 0 0 10px rgba(219, 112, 249, 0.4), 0 0 20px rgba(219, 112, 249, 0.2);
+    }
+}
+
+@keyframes pulse-button-dark {
+    0% {
+        background-color: rgba(219, 112, 249, 0.2);
+        box-shadow: 0 0 0 0 rgba(219, 112, 249, 0.7);
+    }
+    50% {
+        background-color: rgba(219, 112, 249, 0.4);
+        box-shadow: 0 0 20px 5px rgba(219, 112, 249, 0.9);
+        border-color: rgba(219, 112, 249, 1);
+    }
+    100% {
+        background-color: rgba(219, 112, 249, 0.2);
+        box-shadow: 0 0 0 0 rgba(219, 112, 249, 0);
+    }
+}
+
+
+.agent-header {
+    color: #e0d5f5;
+    border-bottom: 1px solid rgba(186, 85, 211, 0.3);
+    text-shadow: 0 0 5px rgba(186, 85, 211, 0.3);
+}
+
+
+div.stChatMessage[data-testid="stChatMessage"]:has(.supervisor-message) {
+    border-left: 5px solid #ff1493;
+    box-shadow: -5px 0 15px rgba(255, 20, 147, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.planner-message) {
+    border-left: 5px solid #db70f9;
+    box-shadow: -5px 0 15px rgba(219, 112, 249, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.recon-message) {
+    border-left: 5px solid #c44ef7;
+    box-shadow: -5px 0 15px rgba(196, 78, 247, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.initaccess-message) {
+    border-left: 5px solid #ff69b4;
+    box-shadow: -5px 0 15px rgba(255, 105, 180, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.execution-message) {
+    border-left: 5px solid #da70d6;
+    box-shadow: -5px 0 15px rgba(218, 112, 214, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.persistence-message) {
+    border-left: 5px solid #ba55d3;
+    box-shadow: -5px 0 15px rgba(186, 85, 211, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.privilege-escalation-message) {
+    border-left: 5px solid #ff1493;
+    box-shadow: -5px 0 15px rgba(255, 20, 147, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.defense-evasion-message) {
+    border-left: 5px solid #7df9ff;
+    box-shadow: -5px 0 15px rgba(125, 249, 255, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.tool-message) {
+    border-left: 5px solid #7df9ff;
+    box-shadow: -5px 0 15px rgba(125, 249, 255, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.tool-output-message) {
+    border-left: 5px solid #7df9ff;
+    box-shadow: -5px 0 15px rgba(125, 249, 255, 0.3);
+}
+div.stChatMessage[data-testid="stChatMessage"]:has(.agent-message) {
+    border-left: 5px solid #9370db;
+    box-shadow: -5px 0 15px rgba(147, 112, 219, 0.3);
+}
+
+
+.supervisor-message strong {
+    color: #ff1493;
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.6);
+}
+.planner-message strong {
+    color: #db70f9;
+    text-shadow: 0 0 10px rgba(219, 112, 249, 0.6);
+}
+.recon-message strong {
+    color: #c44ef7;
+    text-shadow: 0 0 10px rgba(196, 78, 247, 0.6);
+}
+.initaccess-message strong {
+    color: #ff69b4;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+}
+.execution-message strong {
+    color: #da70d6;
+    text-shadow: 0 0 10px rgba(218, 112, 214, 0.6);
+}
+.persistence-message strong {
+    color: #ba55d3;
+    text-shadow: 0 0 10px rgba(186, 85, 211, 0.6);
+}
+.privilege-escalation-message strong {
+    color: #ff1493;
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.6);
+}
+.defense-evasion-message strong {
+    color: #7df9ff;
+    text-shadow: 0 0 10px rgba(125, 249, 255, 0.6);
+}
+.tool-message strong {
+    color: #7df9ff;
+    text-shadow: 0 0 10px rgba(125, 249, 255, 0.6);
+}
+.tool-output-message strong {
+    color: #7df9ff;
+    text-shadow: 0 0 10px rgba(125, 249, 255, 0.6);
+}
+.agent-message strong {
+    color: #9370db;
+    text-shadow: 0 0 10px rgba(147, 112, 219, 0.6);
+}

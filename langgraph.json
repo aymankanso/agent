@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "swarm": "./src/graphs/swarm.py:graph"
+  },
+  "env": ".env"
+}

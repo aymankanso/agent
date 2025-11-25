@@ -1,0 +1,69 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/*.log
+logs/traces/**/*.json
+logs/metrics/*.csv
+logs/metrics/*.json
+
+# Streamlit
+.streamlit/
+streamlit/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Sensitive
+.env
+*.key
+*.pem
+secrets.json
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json

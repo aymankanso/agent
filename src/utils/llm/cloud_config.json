@@ -1,0 +1,32 @@
+[
+  {
+    "display_name": "GPT-4o mini",
+    "model_name": "gpt-4o-mini",
+    "provider": "openai"
+  },
+  {
+    "display_name": "GPT-4o",
+    "model_name": "gpt-4o",
+    "provider": "openai"
+  },
+  {
+    "display_name": "GPT-4 Turbo",
+    "model_name": "gpt-4-turbo-preview",
+    "provider": "openai"
+  },
+  {
+    "display_name": "Claude 3.5 Sonnet",
+    "model_name": "claude-3-5-sonnet-20241022",
+    "provider": "anthropic"
+  },
+  {
+    "display_name": "Claude 3.5 Haiku",
+    "model_name": "claude-3-5-haiku-20241022",
+    "provider": "anthropic"
+  },
+  {
+    "display_name": "Claude 3 Opus",
+    "model_name": "claude-3-opus-20240229",
+    "provider": "anthropic"
+  }
+]

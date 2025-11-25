@@ -1,0 +1,19 @@
+services:
+  attacker:
+    build:
+      context: .
+      dockerfile: Dockerfile.attacker
+    container_name: attacker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/root/data
+    networks:
+      - pentest_network
+    privileged: true
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+
+networks:
+  pentest_network:
+    driver: bridge

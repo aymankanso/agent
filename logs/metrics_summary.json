@@ -1,0 +1,13 @@
+{
+  "summary": {
+    "total_workflows": 0,
+    "completed": 0,
+    "failed": 0,
+    "running": 0,
+    "avg_duration": 0,
+    "total_events": 0
+  },
+  "agents": {},
+  "tools": {},
+  "timeline": []
+}
