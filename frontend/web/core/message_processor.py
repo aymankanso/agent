@@ -140,10 +140,15 @@ class MessageProcessor:
                 return True
         
         # Content-based duplicate check (same agent, same content)
+        # Only check the last 5 messages to prevent immediate duplicates while allowing
+        # repetition in longer conversations (e.g. "Hello" -> ... -> "Hello")
         new_agent = new_message.get("agent_id")
         new_content = new_message.get("content", "")
         
-        for msg in existing_messages:
+        # Check only recent messages
+        recent_messages = existing_messages[-5:] if len(existing_messages) > 5 else existing_messages
+        
+        for msg in recent_messages:
             if (msg.get("agent_id") == new_agent and 
                 msg.get("type") == new_message.get("type") and
                 msg.get("content") == new_content):
