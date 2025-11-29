@@ -212,7 +212,7 @@ src/
 The system has been successfully tested on various targets, including:
 - **Metasploitable 2**: Verified full exploitation chain capabilities.
 - **Docker Containers**: Tested against isolated vulnerable services.
-- **Simulated Networks**: Validated discovery and enumeration features.
+- **Networks**: Validated discovery and enumeration features.
 
 ---
 
