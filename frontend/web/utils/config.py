@@ -23,7 +23,7 @@ def get_env_config() -> Dict[str, Any]:
     return {
         "debug_mode": os.getenv("DEBUG_MODE", "false").lower() == "true",
         "theme": os.getenv("THEME", "dark"),
-        "docker_container": os.getenv("DOCKER_CONTAINER", "AI Red Teaming Multi-Agent-kali"),
+        "docker_container": os.getenv("DOCKER_CONTAINER", "attacker"),
         "chat_height": int(os.getenv("CHAT_HEIGHT", "700"))
     }
 
