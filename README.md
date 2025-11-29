@@ -18,9 +18,9 @@ An autonomous AI-powered penetration testing framework using **4 specialized age
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.10+
+- Python 3.11+
 - Docker Desktop
-- OpenAI API Key
+- OpenAI API Key or Anthropic API Key
 
 ### Installation
 
@@ -38,8 +38,8 @@ python -m venv venv
 pip install -r requirements.txt
 
 # Configure environment
-cp .env.example .env
-# Edit .env and add your OPENAI_API_KEY
+copy .env.example .env
+# Edit .env and add your API keys (OPENAI_API_KEY and/or ANTHROPIC_API_KEY)
 
 # Start Docker container
 docker-compose up -d
@@ -49,11 +49,8 @@ docker-compose up -d
 
 **Option 1: Single Command (Windows PowerShell)**
 ```powershell
-Start-Process powershell -ArgumentList "-NoExit", "-Command", ".\venv\Scripts\python.exe src/tools/mcp/Reconnaissance.py"
-Start-Sleep -Seconds 2
-Start-Process powershell -ArgumentList "-NoExit", "-Command", ".\venv\Scripts\python.exe src/tools/mcp/Initial_Access.py"
-Start-Sleep -Seconds 3
-.\venv\Scripts\python.exe -m streamlit run frontend/streamlit_app.py
+# Use the provided PowerShell script
+.\run_app.ps1
 ```
 
 **Option 2: Manual (3 terminals)**
@@ -162,10 +159,11 @@ streamlit run frontend/streamlit_app.py
 
 ### Environment Variables
 ```bash
-# .env file
-OPENAI_API_KEY=sk-...
-OPENAI_MODEL=gpt-4o-mini
-OPENAI_TEMPERATURE=0
+# .env file (copy from .env.example)
+OPENAI_API_KEY=your_openai_api_key_here
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+LANGGRAPH_TRACING_V2=false
+LOG_LEVEL=INFO
 ```
 
 ### Project Structure
@@ -195,13 +193,28 @@ src/
 
 ---
 
-## Project
+## 📋 Project Overview
 
-**Objective**: Demonstrate automation of penetration testing tasks
+**Objective**: Demonstrate automation of penetration testing tasks through coordinated AI agents
 
 **System Features**:
-- Multi-agent architecture with clear roles
-- Real-time cost tracking per agent
-- Safety measures
-- Comprehensive documentation
+- Multi-agent architecture with clear roles and responsibilities
+- Real-time cost tracking per agent and operation
+- Built-in safety measures and user approval prompts
+- Comprehensive documentation and reporting
+- Docker-based isolation for security tools
+- MCP (Model Context Protocol) integration for tool communication
+- LangGraph orchestration for complex workflows
+
+---
+
+## 📄 License
+
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is for **authorized security testing only**. Users are responsible for ensuring they have proper authorization before scanning or testing any systems. Unauthorized use may violate laws and regulations.
 
